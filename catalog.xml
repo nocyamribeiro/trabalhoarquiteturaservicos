@@ -2,4 +2,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://localhost:8080/StrManagementWSApp/RetornarPublicacao?wsdl" uri="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/StrManagementWSApp/RetornarPublicacao.wsdl"/>
     <system systemId="http://localhost:8080/StrManagementWSApp/RetornarPublicacao?xsd=1" uri="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/StrManagementWSApp/RetornarPublicacao.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PublicacaoServico/RetornarPublicacao?wsdl" uri="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/PublicacaoServico/RetornarPublicacao.wsdl"/>
+    <system systemId="http://localhost:8080/PublicacaoServico/RetornarPublicacao?xsd=1" uri="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/PublicacaoServico/RetornarPublicacao.xsd_1.xsd"/>
 </catalog>

@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-RetornarPublicacao" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/RetornarPublicacao"/>
-        <property name="wsdl-RetornarPublicacao" location="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/StrManagementWSApp/RetornarPublicacao.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RetornarPublicacao" destdir="${build.generated.dir}/jax-wsCache/RetornarPublicacao" wsdl="${wsdl-RetornarPublicacao}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/StrManagementWSApp/RetornarPublicacao?wsdl" xnocompile="true" xendorsed="true">
+        <property name="wsdl-RetornarPublicacao" location="xml-resources/web-service-references/RetornarPublicacao/wsdl/localhost_8080/PublicacaoServico/RetornarPublicacao.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RetornarPublicacao" destdir="${build.generated.dir}/jax-wsCache/RetornarPublicacao" wsdl="${wsdl-RetornarPublicacao}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PublicacaoServico/RetornarPublicacao?wsdl" xnocompile="true" xendorsed="true">
             <depends file="${wsdl-RetornarPublicacao}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/RetornarPublicacao"/>
         </wsimport>
@@ -31,7 +31,7 @@
     </target>
     <target name="wsimport-client-clean-RetornarPublicacao" depends="-init-project">
         <delete dir="${build.generated.dir}/jax-wsCache/RetornarPublicacao"/>
-        <delete dir="${build.generated.sources.dir}/jax-ws/org/str/management"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/br/com/publicacaoweb"/>
     </target>
     <target name="wsimport-client-generate" depends="wsimport-client-RetornarPublicacao"/>
 </project>
